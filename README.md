@@ -1,97 +1,100 @@
 # Wojciech Wiesner
 
-## Founder · AI Product Leader · Systems Builder
+## Founder · AI Product Leader · Systems & Technology Operator
 
-I turn messy, ambiguous business problems into systems that can actually operate.
+I turn ambiguous business problems into systems that can actually operate.
 
-My background is not a traditional software-engineering or product-management ladder. I built and ran a company, hired and managed people, worked with enterprise customers, raised external capital, and then moved hands-on into AI-native product building.
+My background spans enterprise data, high-scale operations, company building, product leadership and hands-on AI delivery. I work best close to the business problem: understand it with decision-makers, prototype the shortest useful path, then turn what works into a production system.
 
-The recurring pattern in my work is simple:
+Today, at **Application Partner**, I work closely with CFO / executive leadership on business problems that benefit from AI and automation — from rapid prototypes to full end-to-end product delivery.
 
-**listen → decompose → model → constrain → automate → measure → improve**
+### Scale I have operated at
 
-AI is leverage. Product judgment stays human.
+**~PLN 3M raised** · **CCC Group strategic investor** · **~14k-driver network** · **61 cities + Prague** · **~20 people hired** · **~10k invoices/month** · **~1.5k automated onboardings** · **4 manufacturing sites under SAP Master Data responsibility**
 
-## What I build
+---
 
-I am especially interested in systems where probabilistic AI must coexist with deterministic business rules, auditability and real operational consequences.
+## Selected systems
 
-### InvoiceFlow
-
+### [InvoiceFlow](projects/invoiceflow/README.md)
 **~10,000 invoices/month in production.**
 
-AI-assisted extraction and classification wrapped in deterministic validation, routing, approval workflows and integrations with KSeF, Monday.com and accounting systems.
+AI-assisted document processing wrapped in deterministic validation, business rules, approvals, routing and finance integrations.
 
-**Principle:** the model proposes; the system validates what is allowed to happen next.
+**Pattern:** the model proposes; the system validates what is allowed to happen next.
 
-### Onboarding Flow
+### [Onboarding Flow](projects/onboarding-flow/README.md)
+**~1,500 people processed with minimal manual intervention.**
 
-**~1,500 people handled with almost no manual operator intervention.**
+Schema-driven onboarding automation where process state and next actions remain deterministic and LLMs are used only where language flexibility adds value.
 
-A schema-driven onboarding / recruitment engine where process state and next steps are deterministic. The LLM is deliberately bounded to language generation where flexibility is useful.
-
-**Principle:** 90% determinism, 10% LLM.
-
-### Feedby
-
-An AI-first feedback system designed around a **feedback → triage → engineering context → agent → reviewable PR** loop.
-
-The goal is not to collect more tickets. It is to shorten the distance between a real user problem and a verified product change while keeping human review at the code-change boundary.
-
-### Maicrosoft / UniPro OS
-
-A primitives-first architecture for constrained AI composition:
+### [UniPro](projects/unipro/README.md)
+Enterprise automation architecture for turning ambiguous intent into validated plans and deterministic execution through reusable capabilities / primitives.
 
 ```text
-Probabilistic intent / planning
-          ↓
-     abstract Plan
-          ↓
-schema + dependency + policy validation
-          ↓
- deterministic execution
+intent → interpretation → plan → validation → controlled execution → telemetry
 ```
 
-The core idea is to let models interpret and propose while validated primitives, policies and execution engines control critical actions.
+### [Xpress Delivery](projects/xpress-delivery/README.md)
+Technology-enabled same-day delivery platform operated across **61 Polish cities + Prague**. I co-founded the company, hired ~20 people, raised ~PLN 3M and secured CCC Group as a strategic investor while owning product/system direction and software-delivery priorities.
 
-### Tuli
+### [EcoXpress](projects/ecoxpress/README.md)
+Large-scale driver operation reaching a **~14,000-driver network**. I ran operations, designed the internal driver settlement/accounting system and coordinated development around the systems required to operate at scale.
 
-A privacy-first, event-sourced AI product for couples built around context, consent, conflicting perspectives and safe AI mediation.
+---
 
-It is an example of a different reliability problem: not financial rules, but human ambiguity, privacy and trust.
+## Public tools I actually use / built for real workflows
 
-## Before AI
+### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui)
+Remote control plane for agent-heavy terminal workflows. Lets me monitor and interact with multiple coding-agent terminals running on an always-on machine over SSH.
 
-I was **founder & CEO of Xpress Delivery**, a same-day logistics company. I recruited and managed teams, worked with enterprise customers and investors, and helped build the business from the operating side rather than from a software role.
+### [Agent Zero CLI](https://github.com/vizi2000/agentzero-cli)
+Local-first coding-agent CLI with command interception, approval boundaries and multiple model backends. Packaged for PyPI.
+
+### [Feedby Widget](https://github.com/vizi2000/feedby-widget)
+Embeddable feedback widget used as the client-side part of a feedback → context → AI triage → reviewable change workflow.
+
+### [MCP Agent Bridge](https://github.com/vizi2000/mcp-agent-bridge)
+Bidirectional MCP bridge connecting coding-agent ecosystems and tool interfaces across different execution environments.
+
+---
+
+## How I build
+
+```text
+listen → decompose → model → prototype → constrain → build → automate → observe → improve
+```
+
+I use AI aggressively to compress research, prototyping and implementation time. I do **not** use it as an excuse to remove deterministic controls from consequential workflows.
+
+I deliberately separate:
+
+- ambiguity that benefits from probabilistic models,
+- state and rules that should remain deterministic,
+- actions that require validation or policy boundaries,
+- decisions that should remain human.
+
+I also run rapid 0→1 product experiments to shorten the distance between an idea and market feedback. My personal speed record is roughly **2 hours from idea → working WordPress plugin → product page → live checkout**.
+
+---
+
+## Background
+
+Before AI-native product work, I spent years operating real systems at scale:
+
+- **Application Partner** — AI Developer / product & technology operator; direct work with CFO and executive leadership; business problem discovery, rapid prototypes and end-to-end AI/automation delivery.
+- **Xpress Delivery (2018–2025)** — co-founder / CEO-CVO; product and technology direction, development-team delivery, enterprise customers, fundraising and multi-city operations.
+- **EcoXpress (2016–2022)** — founder/operator; large driver network, internal settlement/accounting system and technology-enabled operations.
+- **2 Sisters Food Group, UK (2010–2012)** — SAP Master Data Specialist with independent responsibility across four manufacturing sites.
 
 In 2022 I was recognised by **BRIEF among the 50 Most Creative People in Business**.
 
-That background shapes how I approach technology today: architecture starts from the operational problem and the outcome that should move — not from a model, framework or trend looking for a use case.
+---
 
-## How I use AI
+## Links
 
-I use AI heavily to compress the cost and time of research, prototyping, implementation and verification. That allows me to test ideas unusually quickly.
+- **Portfolio / case studies:** https://theones.io/ai-product-leader
+- **LinkedIn:** https://www.linkedin.com/in/wojciechwiesner/
+- **Email:** wojciech@theones.io
 
-But I do not assume AI should own every decision.
-
-I actively separate:
-
-- ambiguity that benefits from probabilistic models,
-- rules that should stay deterministic,
-- actions that require policy or validation,
-- decisions that must remain human.
-
-## What I am not
-
-I am not primarily a coder who happens to use AI.
-
-I am a founder/operator and systems thinker who can now materialize product ideas directly because AI has dramatically reduced the implementation barrier.
-
-## More
-
-- [TheOnes.io](https://theones.io)
-- [Case studies](https://theones.io/case-studies)
-- [LinkedIn](https://www.linkedin.com/in/wojciechwiesner/)
-- [Maicrosoft](https://github.com/vizi2000/maicrosoft)
-
-**Open to conversations around AI product leadership, enterprise agentic systems and 0→1 product creation.**
+> Production/customer repositories remain private where they contain proprietary code or operational details. This profile intentionally highlights systems and tools that best represent how I build.
