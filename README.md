@@ -35,6 +35,9 @@ Enterprise automation architecture for turning ambiguous intent into validated p
 intent → interpretation → plan → validation → controlled execution → telemetry
 ```
 
+### [Feedby](https://github.com/vizi2000/feedby-public)
+AI-first feedback-to-change system: captures user context, triages and clusters feedback, prepares engineering context and dispatches an isolated agent that ends in a **reviewable pull request** rather than an automatic merge.
+
 ### [Xpress Delivery](projects/xpress-delivery/README.md)
 Technology-enabled same-day delivery platform operated across **61 Polish cities + Prague**. I co-founded the company, hired ~20 people, raised ~PLN 3M and secured CCC Group as a strategic investor while owning product/system direction and software-delivery priorities.
 
