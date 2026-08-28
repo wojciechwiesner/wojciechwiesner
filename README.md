@@ -34,9 +34,13 @@ Public operating kit for coding agents (Hermes / Claude Code / OpenCode): one li
 
 Feedback → triage → isolated agent → **reviewable PR** (never auto-merge).
 
-### [InvoiceFlow](https://invoiceflow.apppartner.pl)
+### [InvoiceFlow](https://invoiceflow.apppartner.pl) · [case](projects/invoiceflow/README.md)
 
-~10k invoices/month. Model proposes; deterministic validation decides what is allowed next.
+**~10,000 invoices/month in production.** Business problem → prototype with finance leadership → full operating workflow.
+
+The model extracts and classifies; deterministic rules decide what is allowed next. No model writes to the ledger unsupervised.
+
+What it does (product, not internals): ingest documents · classify type/vendor/cost · validate against accounting rules · human approval at money boundaries · route to finance systems · keep an audit trail.
 
 [![InvoiceFlow](assets/invoiceflow.png)](https://invoiceflow.apppartner.pl)
 
@@ -53,7 +57,10 @@ What is new (product, not stack): language-first operations instead of admin CRU
 
 ### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui) · [agentzero-cli](https://github.com/vizi2000/agentzero-cli)
 
-Control plane for agent terminals over SSH, and a local-first coding-agent TUI with approval boundaries.
+Operator tools I actually run: remote control of coding-agent terminals over SSH, and a local-first agent TUI with **command interception and approvals** (the model does not get a raw shell).
+
+<img src="assets/cmux-remote-tui.png" width="720" alt="cmux-remote-tui public repo">
+<img src="assets/agentzero-cli.png" width="720" alt="agentzero-cli public repo">
 
 ---
 

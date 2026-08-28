@@ -29,6 +29,19 @@ routing / accounting integrations / audit trail
 
 The model can propose what a document contains. The surrounding system decides what is valid and what is allowed to happen next.
 
+## What the product does
+
+- ingest invoices and attachments at volume (~10k/month);
+- extract fields and **classify** document / vendor / cost nature;
+- **validate** against accounting rules before any side effect;
+- require **human approval** at money boundaries;
+- **route** into finance operations (ERP / work management);
+- keep an **audit trail** of propose → validate → decide.
+
+The model can propose. It does not post unsupervised.
+
+Source, parsers, prompts and integration maps stay private.
+
 ## What I owned
 
 - translated finance and operational problems into the product/workflow design;
