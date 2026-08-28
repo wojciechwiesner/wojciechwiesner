@@ -40,9 +40,16 @@ Feedback → triage → isolated agent → **reviewable PR** (never auto-merge).
 
 [![InvoiceFlow](assets/invoiceflow.png)](https://invoiceflow.apppartner.pl)
 
-### [Boocco](https://boocco.theones.io/www/)
+### b**c*o — AI-first salon OS (invitation-only MVP)
 
-Salon manager in production (calendar, clients, booking). Source private.
+No public URL. Brand redacted. Private source.
+
+The operator talks to the product in language. The assistant asks only what is missing (who / what / when), then turns intent into a booking — not a 12-field form. Suggestion chips, staff calendar, waitlist, and a feedback loop back into the product. Built as **invitation-only** while the operating loop is proven with real salons.
+
+What is new (product, not stack): language-first operations instead of admin CRUD; the model may propose, the operator confirms; empty fields become questions, not validation errors.
+
+<img src="assets/mvp-ai-mobile.png" width="280" alt="b**c*o AI assistant, mobile, light theme, brand redacted">
+<img src="assets/mvp-cal-mobile.png" width="280" alt="b**c*o calendar, mobile, light theme">
 
 ### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui) · [agentzero-cli](https://github.com/vizi2000/agentzero-cli)
 
@@ -76,9 +83,6 @@ AI-first feedback-to-change system: captures user context, triages and clusters 
 
 ### [Xpress Delivery](projects/xpress-delivery/README.md)
 Technology-enabled same-day delivery platform operated across **61 Polish cities + Prague**. I co-founded the company, hired ~20 people, raised ~PLN 3M and secured CCC Group as a strategic investor while owning product/system direction and software-delivery priorities.
-
-### [EcoXpress](projects/ecoxpress/README.md)
-Large-scale driver operation reaching a **~14,000-driver network**. I ran operations, designed the internal driver settlement/accounting system and coordinated development around the systems required to operate at scale.
 
 ---
 
@@ -123,7 +127,7 @@ Before AI-native product work, I spent years operating real systems at scale:
 
 - **Application Partner** — AI Developer / product & technology operator; direct work with CFO and executive leadership; business problem discovery, rapid prototypes and end-to-end AI/automation delivery.
 - **Xpress Delivery (2018–2025)** — co-founder / CEO-CVO; product and technology direction, development-team delivery, enterprise customers, fundraising and multi-city operations.
-- **EcoXpress (2016–2022)** — founder/operator; large driver network, internal settlement/accounting system and technology-enabled operations.
+- **2016–2022** — founder/operator of a ~14k-driver logistics network and internal settlement/accounting system.
 - **2 Sisters Food Group, UK (2010–2012)** — SAP Master Data Specialist with independent responsibility across four manufacturing sites.
 
 In 2022 I was recognised by **BRIEF among the 50 Most Creative People in Business**.
