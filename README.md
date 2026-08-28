@@ -14,6 +14,42 @@ Today, at **Application Partner**, I work closely with CFO / executive leadershi
 
 ---
 
+## SOTA products (live)
+
+Operating systems I ship — not slide decks. Screenshots from production, 2026-08-28.
+
+### [TheOnes.io](https://theones.io) · [AI Product Leader](https://theones.io/ai-product-leader)
+
+Portfolio and evidence site: governed AI workflows, case studies, developer passport.
+
+[![TheOnes.io](assets/theones-home.png)](https://theones.io)
+
+[![AI Product Leader](assets/theones-ai.png)](https://theones.io/ai-product-leader)
+
+### [sota-agent-kit](https://github.com/vizi2000/sota-agent-kit)
+
+Public operating kit for coding agents (Hermes / Claude Code / OpenCode): one living `STATE.md`, verified `DONE.md` (SHA + command), VibingDiary, autocheck spots, no secrets in git.
+
+### [Feedby](https://github.com/vizi2000/feedby-public) · [widget](https://github.com/vizi2000/feedby-widget)
+
+Feedback → triage → isolated agent → **reviewable PR** (never auto-merge).
+
+### [InvoiceFlow](https://invoiceflow.apppartner.pl)
+
+~10k invoices/month. Model proposes; deterministic validation decides what is allowed next.
+
+[![InvoiceFlow](assets/invoiceflow.png)](https://invoiceflow.apppartner.pl)
+
+### [Boocco](https://boocco.theones.io/www/)
+
+Salon manager in production (calendar, clients, booking). Source private.
+
+### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui) · [agentzero-cli](https://github.com/vizi2000/agentzero-cli)
+
+Control plane for agent terminals over SSH, and a local-first coding-agent TUI with approval boundaries.
+
+---
+
 ## Selected systems
 
 ### [InvoiceFlow](projects/invoiceflow/README.md)
