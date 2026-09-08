@@ -1,6 +1,6 @@
 # Wojciech Wiesner
 
-## Founder · AI Product Leader · Systems & Technology Operator
+## Founding & Principal AI Systems Architect · Systems & Technology Operator
 
 I turn ambiguous business problems into systems that can actually operate.
 
@@ -16,7 +16,17 @@ Today, at **Application Partner**, I work closely with CFO / executive leadershi
 
 ## SOTA products (live)
 
-Operating systems I ship — not slide decks. Screenshots from production, 2026-08-28.
+Operating systems I ship — not slide decks. Screenshots from production, 2026.
+
+### [jit-context](https://github.com/wojciechwiesner/jit-context) · [CERN Zenodo DOI: 10.5281/zenodo.22649542](https://doi.org/10.5281/zenodo.22649542)
+
+**Flagship Architectural Moat:** An Epistemic Context Runtime & JIT OS for AI Agents.
+
+Eliminates context needle-in-a-haystack bloat and prompt drift through a 3-tier cascade: L0 Hot-Path SQLite WAL (<3ms Read-Your-Own-Writes), L1 Scope Hysteresis Guard (<10ms), and L2 Bounded Vector Broker. Governed by 10 strict Epistemic Invariants (I1–I10) and deterministic autocheck spots.
+
+[![CERN Zenodo DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22649542-107c41?style=flat-square&logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.22649542)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11+-3776AB.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
 
 ### [TheOnes.io](https://theones.io) · [AI Product Leader](https://theones.io/ai-product-leader)
 
@@ -26,11 +36,11 @@ Portfolio and evidence site: governed AI workflows, case studies, developer pass
 
 [![AI Product Leader](assets/theones-ai.png)](https://theones.io/ai-product-leader)
 
-### [sota-agent-kit](https://github.com/vizi2000/sota-agent-kit)
+### [sota-agent-kit](https://github.com/wojciechwiesner/sota-agent-kit)
 
 Public operating kit for coding agents (Hermes / Claude Code / OpenCode): one living `STATE.md`, verified `DONE.md` (SHA + command), VibingDiary, autocheck spots, no secrets in git.
 
-### [Feedby](https://github.com/vizi2000/feedby-public) · [widget](https://github.com/vizi2000/feedby-widget)
+### [Feedby](https://github.com/wojciechwiesner/feedby-public) · [widget](https://github.com/wojciechwiesner/feedby-widget)
 
 Feedback → triage → isolated agent → **reviewable PR** (never auto-merge).
 
@@ -55,7 +65,7 @@ What is new (product, not stack): language-first operations instead of admin CRU
 <img src="assets/mvp-ai-mobile.png" width="280" alt="b**c*o AI assistant, mobile, light theme, brand redacted">
 <img src="assets/mvp-cal-mobile.png" width="280" alt="b**c*o calendar, mobile, light theme">
 
-### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui) · [agentzero-cli](https://github.com/vizi2000/agentzero-cli)
+### [cmux-remote-tui](https://github.com/wojciechwiesner/cmux-remote-tui) · [agentzero-cli](https://github.com/wojciechwiesner/agentzero-cli)
 
 Operator tools I actually run: remote control of coding-agent terminals over SSH, and a local-first agent TUI with **command interception and approvals** (the model does not get a raw shell).
 
@@ -65,6 +75,11 @@ Operator tools I actually run: remote control of coding-agent terminals over SSH
 ---
 
 ## Selected systems
+
+### [jit-context](https://github.com/wojciechwiesner/jit-context)
+**Architectural Moat: Epistemic Context Runtime & JIT OS for AI Agents.**
+
+CERN Zenodo DOI: `10.5281/zenodo.22649542`. Real-time L0 SQLite WAL (<3ms RYOW), L1 Scope Hysteresis, L2 Bounded Retrieval, 10 Epistemic Invariants, and deterministic Autocheck Spots.
 
 ### [InvoiceFlow](projects/invoiceflow/README.md)
 **~10,000 invoices/month in production.**
@@ -85,7 +100,7 @@ Enterprise automation architecture for turning ambiguous intent into validated p
 intent → interpretation → plan → validation → controlled execution → telemetry
 ```
 
-### [Feedby](https://github.com/vizi2000/feedby-public)
+### [Feedby](https://github.com/wojciechwiesner/feedby-public)
 AI-first feedback-to-change system: captures user context, triages and clusters feedback, prepares engineering context and dispatches an isolated agent that ends in a **reviewable pull request** rather than an automatic merge.
 
 ### [Xpress Delivery](projects/xpress-delivery/README.md)
@@ -95,16 +110,19 @@ Technology-enabled same-day delivery platform operated across **61 Polish cities
 
 ## Public tools I actually use / built for real workflows
 
-### [cmux-remote-tui](https://github.com/vizi2000/cmux-remote-tui)
+### [jit-context](https://github.com/wojciechwiesner/jit-context)
+Epistemic Context Runtime & JIT OS for AI Agents. Sub-3ms SQLite WAL, 10 epistemic invariants, CERN Zenodo DOI.
+
+### [cmux-remote-tui](https://github.com/wojciechwiesner/cmux-remote-tui)
 Remote control plane for agent-heavy terminal workflows. Lets me monitor and interact with multiple coding-agent terminals running on an always-on machine over SSH.
 
-### [Agent Zero CLI](https://github.com/vizi2000/agentzero-cli)
+### [Agent Zero CLI](https://github.com/wojciechwiesner/agentzero-cli)
 Local-first coding-agent CLI with command interception, approval boundaries and multiple model backends. Packaged for PyPI.
 
-### [Feedby Widget](https://github.com/vizi2000/feedby-widget)
+### [Feedby Widget](https://github.com/wojciechwiesner/feedby-widget)
 Embeddable feedback widget used as the client-side part of a feedback → context → AI triage → reviewable change workflow.
 
-### [MCP Agent Bridge](https://github.com/vizi2000/mcp-agent-bridge)
+### [MCP Agent Bridge](https://github.com/wojciechwiesner/mcp-agent-bridge)
 Bidirectional MCP bridge connecting coding-agent ecosystems and tool interfaces across different execution environments.
 
 ---
