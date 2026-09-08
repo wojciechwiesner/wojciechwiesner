@@ -96,37 +96,54 @@ Operator tools I actually run: remote control of coding-agent terminals over SSH
 
 ---
 
-## Selected systems
+## Selected systems & production architecture dossiers
 
-### [jit-context](https://github.com/wojciechwiesner/jit-context)
-**Architectural Moat: Epistemic Context Runtime & JIT OS for AI Agents.**
+In-depth technical architecture dossiers for non-public, enterprise, and internal production systems:
 
-CERN Zenodo DOI: `10.5281/zenodo.22649542`. Real-time L0 SQLite WAL (<3ms RYOW), L1 Scope Hysteresis, L2 Bounded Retrieval, 10 Epistemic Invariants, and deterministic Autocheck Spots.
+### [jit-context](https://github.com/wojciechwiesner/jit-context) · [CERN Zenodo DOI](https://doi.org/10.5281/zenodo.22649542)
+**Architectural Moat: Epistemic Context Runtime & JIT OS for AI Agents.**  
+Sub-3ms L0 SQLite WAL (Read-Your-Own-Writes), L1 Scope Hysteresis, L2 Bounded Associative Broker, 10 Epistemic Invariants (I1–I10), and dynamic prompt caching prefix alignment. Delivered 2.44x faster autonomous delivery on production benchmarks.
 
 ### [InvoiceFlow](projects/invoiceflow/README.md)
-**~10,000 invoices/month in production.**
-
-AI-assisted document processing wrapped in deterministic validation, business rules, approvals, routing and finance integrations.
-
-**Pattern:** the model proposes; the system validates what is allowed to happen next.
+**~10,000 invoices/month in production.**  
+Production financial automation pipeline: Vision OCR extraction proposals governed by deterministic gross/net VAT validation, KSeF FA(2) compliance, High-Water Mark deduplication, and enterprise ERP routing.  
+*Pattern:* Probabilistic models propose; deterministic engines decide.
 
 ### [Onboarding Flow](projects/onboarding-flow/README.md)
-**~1,500 people processed with minimal manual intervention.**
+**~1,500 people processed with minimal manual intervention.**  
+Schema-driven legalisation and onboarding engine handling 108 dynamic datapoints. Decouples complex business and regulatory rules into swappable JSON schemas, eliminating code releases on workflow changes. Built with FastAPI, asyncpg, and iDenfy biometric KYC.
 
-Schema-driven onboarding automation where process state and next actions remain deterministic and LLMs are used only where language flexibility adds value.
+### [Boocco](projects/boocco/README.md)
+**AI-first salon operations platform & multi-tenant RAG.**  
+Vertical SaaS replacing administrative CRUD with a natural language booking resolver. Features hermetic tenant isolation (PostgreSQL RLS), pgvector HNSW indexing for client context, and deterministic double-booking prevention with 2-way SMS confirmation.
 
-### [UniPro](projects/unipro/README.md)
-Enterprise automation architecture for turning ambiguous intent into validated plans and deterministic execution through reusable capabilities / primitives.
+### [Synthapse & KKiK](projects/synthapse/README.md) · [Live Demo](https://synthapse.theones.io)
+**Real-time generative AI techno studio with deterministic DSP watchdogs.**  
+High-performance browser instrument combining Google Lyria RealTime audio streaming with WebGL shaders and physical Web MIDI hardware control (Akai MPD218 / MIDImix). Enforces sub-bass mono discipline (<120Hz) and transient alignment via real-time DSP analysis.
 
-```text
-intent → interpretation → plan → validation → controlled execution → telemetry
-```
+### [Feedby](projects/feedby/README.md) · [Widget Repo](https://github.com/wojciechwiesner/feedby-widget)
+**Closed-loop feedback-to-pull-request multi-agent system.**  
+Captures user runtime context in web applications, triages bug reports via vector clustering, and dispatches isolated coding agents to author surgical fixes. Enforces human review at the merge boundary (zero direct commits to main).
 
-### [Feedby](https://github.com/wojciechwiesner/feedby-public)
-AI-first feedback-to-change system: captures user context, triages and clusters feedback, prepares engineering context and dispatches an isolated agent that ends in a **reviewable pull request** rather than an automatic merge.
+### [Arara API](projects/arara-api/README.md)
+**Resilient recruitment ops adapter & self-healing REST gateway.**  
+Wraps a closed-source legacy recruitment portal in clean FastAPI REST endpoints. Features dual-path authentication (Manifest V3 extension sync + headless Playwright daemon fallback), asyncio mutex locking on token refresh, and automated push-to-HIRED cascades.
+
+### [WhatsApp Command Center](projects/whatsapp-center/README.md)
+**Autonomous messaging infrastructure & multi-agent dispatch hub.**  
+Production gateway deployed on borg.tools (:3060 / :3050) bridging WhatsApp channels with autonomous agent triage. Features persistent Baileys WebSocket connection, automatic Opus audio note transcription via Whisper, and idempotent event routing to Telegram topics.
+
+### [Tuli.my](projects/tuli-my/README.md)
+**Privacy-first relational intelligence PWA & tiered model gateway.**  
+Event-sourced progressive web app with cryptographic consent boundaries. Employs a multi-tier model gateway (Groq Llama 70B / Gemini Flash / Frontier) that slashes token inference costs by >70% while guaranteeing that private reflections never leak across scopes.
+
+### [UniPro OS & Insight](projects/unipro/README.md)
+**Policy-bounded desktop telemetry & Plan JSON execution compiler.**  
+Enterprise automation architecture: screen observation extracts activity primitives, while a deterministic OS compiles intent into validated Plan JSON before invoking system automation APIs.
 
 ### [Xpress Delivery](projects/xpress-delivery/README.md)
-Technology-enabled same-day delivery platform operated across **61 Polish cities + Prague**. I co-founded the company, hired ~20 people, raised ~PLN 3M and secured CCC Group as a strategic investor while owning product/system direction and software-delivery priorities.
+**Technology-enabled same-day delivery platform across 61 cities + Prague.**  
+Logistics network and internal dispatch platform: co-founded, raised ~PLN 3M, secured CCC Group as strategic investor, hired ~20 people, and led product/software delivery.
 
 ---
 
