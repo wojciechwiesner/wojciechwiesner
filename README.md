@@ -50,6 +50,20 @@ Eliminates context needle-in-a-haystack bloat, prompt drift, and agent hallucina
 | **Read-Your-Own-Writes Latency**| 200–800ms (Vector API) | **<3ms (SQLite WAL)** | **Sub-millisecond local truth** |
 | **Epistemic Self-Poisoning** | High (repeats hallucinations)| **Zero (Authority = 0.0)** | **100% grounded in runtime proofs** |
 
+#### 🏆 Live Grand Showdown: Local Qwen 3.8 9B (Metal M2 Pro) vs Google Gemini 3.8 Flash Cloud API (EXP-009):
+
+A head-to-head multi-module autonomous bug fix across 3 interconnected Python modules (`event_pipeline.py`, `retry_policy.py`, `storage.py`) verified by an independent blind `pytest` suite:
+
+| Competitor | Hardware & Runtime | Turns | Time | Pytest Verification | Cost / Privacy |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 🥇 **Local Qwen 3.8 9B + JIT** | **Apple Mac Mini M2 Pro (Ollama 32k)** | **4 turns** | ~2 min (126s) | **4/4 PASSED (exit 0)** | **0.00 PLN · 100% Local / Zero Data Leak** |
+| 🥈 **Gemini 3.8 Flash + JIT** | Google Cloud Frontier API | 9 turns | 17.7s | **4/4 PASSED (exit 0)** | Paid Cloud API |
+| 🥉 **Gemini 3.8 Flash (No JIT / Chat)** | Google Cloud Frontier API (Haystack) | 10 turns | 34.5s | ❌ **0/4 FAILED (lost in tests/)** | Paid Cloud API |
+
+* **Turn 1:** Qwen dispatched 4 parallel `read_file` calls in a single turn.
+* **Turn 2:** JIT Context provided an ~1.8k token working set; Qwen executed 3 parallel `write_file` calls addressing all 4 root causes simultaneously.
+* **Turn 4:** Test run returned 100% clean exit code 0. Meanwhile, Gemini 3.8 Flash without JIT drowned in chat history and modified tests instead of fixing bugs.
+
 ### [TheOnes.io](https://theones.io) · [AI Product Leader](https://theones.io/ai-product-leader)
 
 Portfolio and evidence site: governed AI workflows, case studies, developer passport.
