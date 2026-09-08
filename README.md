@@ -1,8 +1,15 @@
 # Wojciech Wiesner
 
-## Founding & Principal AI Systems Architect · Systems & Technology Operator
+## Founding & Principal AI Systems Architect · Hands-On Systems Builder
 
 I turn ambiguous business problems into systems that can actually operate.
+
+I architect systems, but I write code hands-on every single day. I genuinely love the craft of coding—the immediate, deterministic feedback loop of the terminal, the compiler, and green test suites is what keeps me grounded, focused, and operating at peak velocity.
+
+Whether I am designing a novel agent runtime or taking on async engineering delivery:
+- **Zero ego, zero drama:** I don't lecture your team or push unsolicited rewrites. I respect your existing patterns, conventions, and codebase reality.
+- **Surgical async delivery:** I pick up tasks from Linear/Jira, implement clean solutions with regression tests, and submit reviewable PRs without calendar pollution or unnecessary calls.
+- **Craft over slides:** I believe real product leadership is impossible without touching the code and understanding runtime failure modes firsthand.
 
 My background spans enterprise data, high-scale operations, company building, product leadership and hands-on AI delivery. I work best close to the business problem: understand it with decision-makers, prototype the shortest useful path, then turn what works into a production system.
 
@@ -176,8 +183,7 @@ In 2022 I was recognised by **BRIEF among the 50 Most Creative People in Busines
 
 ## Links
 
-- **Portfolio / case studies:** https://theones.io/ai-product-leader
-- **LinkedIn:** https://www.linkedin.com/in/wojciechwiesner/
-- **Email:** wojciech@theones.io
+- **Portfolio / case studies:** https://theones.io/case-studies
+- **Direct inquiries:** wojciech@theones.io
 
 > Production/customer repositories remain private where they contain proprietary code or operational details. This profile intentionally highlights systems and tools that best represent how I build.
