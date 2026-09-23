@@ -80,6 +80,20 @@ A head-to-head multi-module autonomous bug fix across 3 interconnected Python mo
 * **Turn 2:** JIT Context provided an ~1.8k token working set; Qwen executed 3 parallel `write_file` calls addressing all 4 root causes simultaneously.
 * **Turn 4:** Test run returned 100% clean exit code 0. Meanwhile, Gemini 3.8 Flash without JIT drowned in chat history and modified tests instead of fixing bugs.
 
+### [jit-context-os](https://github.com/wojciechwiesner/jit-context-os) · [Agent Zero Community Plugin](https://github.com/agent0ai/agent-zero)
+
+**Native Epistemic Runtime & Prompt Cache Optimizer for Agent Zero:** Integrated 3-tier memory cascade (L0/L1/L2) with deterministic prompt caching and real-time JEV Bridge (Shadow Judge, Eviction Advisor, and live status bar in chat).
+
+[![Agent Zero](https://img.shields.io/badge/Agent%20Zero-Plugin-blue?style=flat-square)](https://github.com/agent0ai/agent-zero)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22649541.svg?style=flat-square)](https://doi.org/10.5281/zenodo.22649541)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/wojciechwiesner/jit-context-os/blob/master/LICENSE)
+[![Token Reduction](https://img.shields.io/badge/Prompt%20Tokens--88.9%25-brightgreen?style=flat-square)]()
+[![Code Accuracy](https://img.shields.io/badge/Self--Healing%20Accuracy-%2B20%25-brightgreen?style=flat-square)]()
+
+* **One-Line Install:** `git clone https://github.com/wojciechwiesner/jit-context-os /a0/usr/plugins/jit_context`
+* **Integrated JEV Bridge:** Shadow judge, dynamic eviction advisor, and live telemetry status bar above the chat input.
+* **Empirical Gains:** **-88.9% token consumption** on Gemini 3.8 Flash, **+20.0 p.p. SWE pass rate** on Liquid AI LFM 2.5, **+18.0 p.p. self-healing** on Qwen 3.8 Coder.
+
 ### [TheOnes.io](https://theones.io) · [AI Product Leader](https://theones.io/ai-product-leader) · [Epistemic Benchmark Hub (SOTA 2026)](https://theones.io/benchmark/)
 
 Portfolio and evidence site: governed AI workflows, case studies, developer passport.
